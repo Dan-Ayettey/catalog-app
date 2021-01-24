@@ -1,6 +1,6 @@
 import {Image, ScrollView, Text, TouchableOpacity, View} from "react-native";
 import React, {useState} from "react";
-import {styles,systemTheme} from "../style/style";
+import {styles} from "../style/style";
 import { Ionicons } from '@expo/vector-icons';
 
 //Cart View

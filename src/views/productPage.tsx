@@ -1,6 +1,6 @@
 import {FlatList, Image, ProgressBarAndroid, Text, TouchableOpacity, View} from "react-native";
 import React, {useState} from "react";
-import {styles,systemTheme} from "../style/style";
+import {styles} from "../style/style";
 import ProductController from "../controller/productController";
 import { Ionicons } from '@expo/vector-icons';
 import ProductModel from "../model/productModel";
@@ -9,7 +9,6 @@ import ProductModel from "../model/productModel";
   const   AppContent =(props:any) => {
       let model =new ProductModel();
       let controller=new ProductController(model)
-      let [index,setIndex]=useState(0);
         const products = [{
             image: require('../assets/asset1.png'),
             productDetails: 'Tommy Yellow unisex T shirt X5',

@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-import {AppFooter,AppContent,AppBar} from "./src/views/productPage";
+import {AppContent,AppBar} from "./src/views/productPage";
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Cart from "./src/views/cartPage";

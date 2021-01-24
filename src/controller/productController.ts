@@ -22,7 +22,7 @@ class ProductController{
          this.productModel.setProductId(productId);
     }
 
-    setProductCart=(productList:[{}])=>{
+    setProductCart= (productList: { image: number; price: string; index: number; productDetails: string })=>{
 
         this.productModel.setProductCart(productList);
 
