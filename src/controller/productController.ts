@@ -2,16 +2,13 @@ import ProductModel from "../model/productModel";
 
 class ProductController{
 
-    image: any=null;
-    productDetails:string='';
-    price:any= 0.0;
-    isDrop_shipping:boolean = false;
+
     private productModel: ProductModel;
 
     constructor(productModel:ProductModel) {
         this.productModel=productModel
     }
-    setImage=(image:any)=>{
+    setImage=(image:number)=>{
         this.productModel.setImage(image);
 
     }
@@ -20,12 +17,12 @@ class ProductController{
 
     }
 
-    setProductId=(productId:any) :any =>{
+    setProductId=(productId:number)=>{
 
-        return this.productModel.setProductId(productId);
+         this.productModel.setProductId(productId);
     }
 
-    setProductCart=(productList:any)=>{
+    setProductCart=(productList:[{}])=>{
 
         this.productModel.setProductCart(productList);
 
@@ -35,7 +32,7 @@ class ProductController{
 
     }
 
-    setPrice=(price:any)=>{
+    setPrice=(price:string)=>{
         this.productModel.setPrice(price);
 
     }

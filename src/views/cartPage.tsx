@@ -4,7 +4,14 @@ import {styles,systemTheme} from "../style/style";
 import { Ionicons } from '@expo/vector-icons';
 
 //Cart View
-const Cart=(props :any)=>{
+const Cart=(props :{
+    navigation: {};
+    route:{
+        params: {
+            cartProduct: {};
+        };
+    };
+})=>{
     return(
 
         <View>
@@ -17,7 +24,18 @@ const Cart=(props :any)=>{
 }
 //Cart
 
-const Product =(props:any)=>{
+const Product =(props:{
+    index: number;
+    item: {
+        isDrop_shipping: boolean;
+        price: string;
+        productDetails: string;
+        image: number;
+        index:number,
+    };
+
+    products:[{}]
+})=>{
     const [isDeleted,setIsDeleted]=useState(true);
     const products=props.products;
      return(
@@ -50,7 +68,7 @@ const Product =(props:any)=>{
      )
 }
 const DetailsScreen=(props:any) =>{
-    console.log(props.products)
+    delete props.products[0]
     const products=props.products;
     return (
         <View style={styles.appContent}>

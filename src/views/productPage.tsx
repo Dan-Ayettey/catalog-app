@@ -18,7 +18,7 @@ import ProductModel from "../model/productModel";
         }
         ,{
             image: require('../assets/asset2.png'),
-            productDetails: 'Tommy Yellow unisex T shirt X5',
+            productDetails: 'Tommy Yellow unisex jeans X5',
             price: '57.99',
             isDrop_shipping: true,
         }, {
@@ -28,22 +28,22 @@ import ProductModel from "../model/productModel";
             isDrop_shipping: true,
         }, {
             image: require('../assets/asset4.png'),
-            productDetails: 'Tommy Yellow unisex T shirt X5',
+            productDetails: "Yyes Yellow unisex women's handbag X5",
             price: '545.5',
             isDrop_shipping: true,
         }, {
             image: require('../assets/asset5.png'),
-            productDetails: 'Tommy Yellow unisex T shirt X5',
+            productDetails: 'Tommy blue unisex jeans Xx',
             price: '6.52',
             isDrop_shipping: true,
         }, {
             image: require('../assets/asset6.png'),
-            productDetails: 'Tommy Yellow unisex T shirt X5',
+            productDetails: 'Tommy White  T shirt X5',
             price: '74.5',
             isDrop_shipping: true,
         }, {
             image: require('../assets/asset7.png'),
-            productDetails: 'Tommy Yellow unisex T shirt X5',
+            productDetails: 'Tommy dark blue unisex T handbag X5',
             price: '89.9',
             isDrop_shipping: true,
         }, {
@@ -79,6 +79,7 @@ import ProductModel from "../model/productModel";
                                 { <ProgressBarAndroid styleAttr={'Horizontal'} color={'green'} />}
                             </Text>
                     }
+
                     data={products} renderItem={({item, index}) => (
                     <View style={styles.products}>
 

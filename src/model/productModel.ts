@@ -1,23 +1,23 @@
 class ProductModel {
-   private image: any=null;
+   private image:number=0;
    private productDetails:string='';
-   private price:any= 0.0;
+   private price :string='';
    private isDrop_shipping:boolean = false;
-   private productCart: any=[];
-    private productId: any;
-    setProductCart=(productCart:any)=>{
+   private productCart=[{}];
+    private productId=0;
+    setProductCart=(productCart:[{}])=>{
         this.productCart.push(productCart);
 
     }
-    getProductCart=() :any =>{
+    getProductCart=()=>{
 
         return this.productCart
     }
-    setImage=(image:any)=>{
+    setImage=(image:number)=>{
         this.image=image;
 
     }
-    setProductId= (productId: boolean) :any =>{
+    setProductId= (productId=0)=>{
 
         this.productId=productId;
     }
@@ -25,7 +25,7 @@ class ProductModel {
       return   this.productId;
 
     }
-     getImage=() :any =>{
+     getImage=()=>{
         return this.image
     }
     setProductDetails=(productDetails:string)=>{
@@ -35,11 +35,11 @@ class ProductModel {
     getProductDetails=() :string =>{
         return this.productDetails
     }
-    setPrice=(price:any)=>{
+    setPrice=(price:string)=>{
         this.price=price;
 
     }
-    getPrice=() :any =>{
+    getPrice=() =>{
         return this.price
     }
     setIsDropable=(isDrop:boolean)=>{
